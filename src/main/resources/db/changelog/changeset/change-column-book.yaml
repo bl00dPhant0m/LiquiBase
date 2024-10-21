@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: change-column
+      author: Kirill
+      changes:
+        - renameColumn:
+            tableName: books
+            oldColumnName: name
+            newColumnName: title
+
+

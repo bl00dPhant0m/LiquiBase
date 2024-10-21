@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: LiquiBase
+
+  datasource:
+    username: root
+    password: root
+    url: jdbc:h2:file:./lib_db_test
+
+  jpa:
+    show-sql: true
+    database: h2
+    hibernate:
+      ddl-auto: update
+    database-platform: org.hibernate.dialect.H2Dialect
+
+  h2:
+    console:
+      enabled: true
+
+  liquibase:
+    enabled: true
+

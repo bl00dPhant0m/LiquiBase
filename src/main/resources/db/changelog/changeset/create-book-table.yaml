@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-book
+      author: Kirill
+      changes:
+        - createTable:
+            tableName: books
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: price
+                  type: decimal(8,2)
+                  constraints:
+                    nullable: false
